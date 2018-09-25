@@ -31,6 +31,8 @@ pkg-config
 itstool
 make
 gettext-devel
+libglib2.0-devel (for yad)
+libgtk2.0-devel (for yad)
 ```
    *I also install `recode`, it's not obligatory, you may to not do this.*
 
@@ -42,7 +44,7 @@ gettext-devel
 curl -O http://ftp.gnome.org/pub/gnome/sources/zenity/3.20/zenity-3.20.0.tar.xz
 tar xvf zenity-3.20.0.tar.xz
 cd zenity-3.20.0
-curl -O https://github.com/kvaps/zenity-windows/blob/master/zenity-3.20.0_win32-1.patch
+curl -O https://raw.githubusercontent.com/kvaps/zenity-windows/master/zenity-3.20.0_win32-1.patch
 patch < zenity-3.20.0_win32-1.patch
 
 export GTK_BASEPATH=/cygdrive/c/gtk
